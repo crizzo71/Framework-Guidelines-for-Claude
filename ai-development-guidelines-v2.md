@@ -35,7 +35,6 @@ This document establishes comprehensive guidelines for integrating AI code assis
    - Production deployment scripts
 
 **Human Oversight Requirements**
-- **Line-by-Line Review**: Engineer must understand and validate every line of AI-generated code
 - **Test Coverage**: Human-written tests required for all AI-generated functions
 - **Documentation**: Human must write/verify all documentation for AI-assisted code
 
@@ -67,7 +66,7 @@ List specific files/functions/classes that were AI-generated:
 ### 2.2 Review Assignment Rules
 
 **Mandatory Human Reviewers**
-- **AI-Generated PRs**: Minimum 2 human reviewers (1 senior engineer)
+- **All PRs**: Minimum 2 human reviewers (1 senior engineer)
 - **Critical System Changes**: Lead architect must review any AI-assisted changes to:
   - Core business logic
   - Security-sensitive components
@@ -371,104 +370,6 @@ describe('AI-Generated Function: calculateUserScore()', () => {
 3. Post-incident review within 24 hours
 4. Process improvement plan within 48 hours
 
-## 10. Community Contribution and Feedback
-
-### 10.1 Open Framework Development
-
-**Community Collaboration**
-This framework is designed to evolve with the rapidly changing landscape of AI-assisted development. We encourage contributions from:
-- Software engineering teams implementing AI-assisted workflows
-- Security professionals with AI code review experience
-- DevOps engineers integrating AI tools into CI/CD pipelines
-- Quality assurance teams testing AI-generated code
-- Academic researchers studying AI-assisted development patterns
-
-**Feedback Categories**
-- **Implementation Experiences**: Share real-world experiences implementing these guidelines
-- **Tool-Specific Adaptations**: Contribute configurations for different AI tools
-- **Industry-Specific Requirements**: Add guidelines for healthcare, finance, automotive, etc.
-- **Security Enhancements**: Propose additional security measures and threat models
-- **Process Improvements**: Suggest workflow optimizations and efficiency gains
-
-### 10.2 Contribution Guidelines
-
-**How to Contribute**
-1. **Issues for Discussion**: Open GitHub issues to discuss proposed changes or share experiences
-2. **Pull Requests**: Submit PRs for specific guideline improvements or additions
-3. **Case Studies**: Contribute anonymized case studies of AI-assisted development successes and failures
-4. **Tool Reviews**: Share evaluations of new AI development tools and their integration approaches
-
-**Review Process**
-- All contributions undergo peer review by practicing engineers
-- Security-related changes require review by cybersecurity professionals
-- Major framework changes require consensus from multiple organizations
-- Real-world validation encouraged before accepting new guidelines
-
-**Attribution and Recognition**
-- Contributors recognized in framework documentation
-- Organization logos displayed for significant contributions
-- Success stories highlighted in community showcase
-
-### 10.3 Framework Evolution
-
-**Versioning and Updates**
-- **Monthly Reviews**: Regular assessment of community feedback and industry developments
-- **Quarterly Updates**: Minor revisions based on accumulated feedback and tool evolution
-- **Annual Overhauls**: Major framework updates reflecting significant AI development advances
-- **Emergency Updates**: Immediate updates for critical security vulnerabilities or major tool changes
-
-**Industry Alignment**
-- Regular sync with major AI tool vendors (Anthropic, GitHub, OpenAI, etc.)
-- Alignment with emerging industry standards and regulations
-- Integration with existing software development frameworks (NIST, ISO 27001, etc.)
-- Collaboration with academic research on AI code generation safety
-
-## 11. Getting Started and Implementation
-
-### 11.1 Phased Adoption Approach
-
-**Phase 1: Basic Implementation (Weeks 1-4)**
-- Implement AI usage declaration in commit messages
-- Set up basic pre-commit hooks for AI code detection
-- Establish minimum human review requirements
-- Create team training on AI tool limitations
-
-**Phase 2: Enhanced Controls (Weeks 5-12)**
-- Deploy advanced security scanning for AI-generated code
-- Implement comprehensive testing requirements
-- Establish metrics collection and monitoring
-- Train senior engineers on architecture review for AI code
-
-**Phase 3: Full Framework (Weeks 13-24)**
-- Complete CI/CD pipeline integration
-- Implement all compliance and auditing procedures
-- Establish escalation procedures and rollback plans
-- Achieve full team certification on AI-assisted development
-
-### 11.2 Success Metrics and ROI
-
-**Developer Productivity Metrics**
-- Code delivery velocity with AI assistance vs. traditional development
-- Time saved on routine coding tasks
-- Reduction in boilerplate code writing
-- Improved code consistency across team members
-
-**Quality and Security Metrics**
-- Defect rates in AI-generated vs. human-written code
-- Security vulnerability detection rates
-- Code review efficiency improvements
-- Test coverage improvements for AI-assisted code
-
-**Team Satisfaction Metrics**
-- Developer satisfaction with AI tool integration
-- Confidence levels in AI-generated code quality
-- Learning curve and adoption rates
-- Team collaboration improvements
-
 ## Conclusion
 
 This framework ensures that AI code assistants enhance developer productivity while maintaining the highest standards of code quality, security, and reliability through comprehensive human oversight and systematic quality controls.
-
-**Join the Community**: Help us improve this framework by sharing your experiences, contributing enhancements, and collaborating on the future of AI-assisted development. Together, we can establish industry best practices that maximize AI benefits while minimizing risks.
-
-**Contact**: Open an issue in this repository to start discussions, propose changes, or share implementation experiences.
